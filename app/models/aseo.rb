@@ -1,0 +1,2 @@
+class Aseo < ApplicationRecord
+end
