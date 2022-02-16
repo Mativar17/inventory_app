@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Aseos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sku</th>
+      <th>Valor neto unitario</th>
+      <th>Stock inicial</th>
+      <th>Compra mes</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @aseos.each do |aseo| %>
+      <tr>
+        <td><%= aseo.name %></td>
+        <td><%= aseo.sku %></td>
+        <td><%= aseo.valor_neto_unitario %></td>
+        <td><%= aseo.stock_inicial %></td>
+        <td><%= aseo.compra_mes %></td>
+        <td><%= link_to 'Show', aseo %></td>
+        <td><%= link_to 'Edit', edit_aseo_path(aseo) %></td>
+        <td><%= link_to 'Destroy', aseo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Aseo', new_aseo_path %>
