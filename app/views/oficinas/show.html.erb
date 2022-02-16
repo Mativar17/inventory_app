@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @oficina.name %>
+</p>
+
+<p>
+  <strong>Sku:</strong>
+  <%= @oficina.sku %>
+</p>
+
+<p>
+  <strong>Valor neto unitario:</strong>
+  <%= @oficina.valor_neto_unitario %>
+</p>
+
+<p>
+  <strong>Stock inicial:</strong>
+  <%= @oficina.stock_inicial %>
+</p>
+
+<p>
+  <strong>Compra mes:</strong>
+  <%= @oficina.compra_mes %>
+</p>
+
+<%= link_to 'Edit', edit_oficina_path(@oficina) %> |
+<%= link_to 'Back', oficinas_path %>

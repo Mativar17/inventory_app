@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @aseo.name %>
+</p>
+
+<p>
+  <strong>Sku:</strong>
+  <%= @aseo.sku %>
+</p>
+
+<p>
+  <strong>Valor neto unitario:</strong>
+  <%= @aseo.valor_neto_unitario %>
+</p>
+
+<p>
+  <strong>Stock inicial:</strong>
+  <%= @aseo.stock_inicial %>
+</p>
+
+<p>
+  <strong>Compra mes:</strong>
+  <%= @aseo.compra_mes %>
+</p>
+
+<%= link_to 'Edit', edit_aseo_path(@aseo) %> |
+<%= link_to 'Back', aseos_path %>

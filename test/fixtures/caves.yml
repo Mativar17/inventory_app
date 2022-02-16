@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  sku: 1
+  valor_neto_unitario: 1
+  stock_inicial: 1
+  maquina_sl: 1
+  maquina_primerpiso: 1
+  maquina_segundopiso: 1
+
+two:
+  name: MyString
+  sku: 1
+  valor_neto_unitario: 1
+  stock_inicial: 1
+  maquina_sl: 1
+  maquina_primerpiso: 1
+  maquina_segundopiso: 1

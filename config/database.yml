@@ -24,6 +24,11 @@ default: &default
 development:
   <<: *default
   database: inventario_salfa_development
+  user: <%= ENV["INVENTARIO_APP_DATABASE_DEV_USER"] %>
+  password: <%= ENV["INVENTARIO_APP_DATABASE_DEV_PASSWORD"] %>
+  host: localhost
+  port: 5433
+
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -58,6 +63,10 @@ development:
 test:
   <<: *default
   database: inventario_salfa_test
+  user: <%= ENV["INVENTARIO_APP_DATABASE_DEV_USER"] %>
+  password: <%= ENV["INVENTARIO_APP_DATABASE_DEV_PASSWORD"] %>
+  host: localhost
+  port: 5433
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
