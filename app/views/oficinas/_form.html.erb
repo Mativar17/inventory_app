@@ -1,42 +1,46 @@
-<%= form_with(model: oficina) do |form| %>
-  <% if oficina.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(oficina.errors.count, "error") %> prohibited this oficina from being saved:</h2>
+<div class="container">
+    <%= form_with(model: oficina) do |form| %>
+    <% if oficina.errors.any? %>
+      <div id="error_explanation">
+        <h2><%= pluralize(oficina.errors.count, "error") %>Errores encontrados al guardar artículo:</h2>
 
-      <ul>
-        <% oficina.errors.each do |error| %>
-          <li><%= error.full_message %></li>
-        <% end %>
-      </ul>
+        <ul>
+          <% oficina.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class="field mb-3">
+      <%= form.label :name %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class="field">
+      <%= form.label :sku %>
+      <%= form.number_field :sku %>
+    </div>
+
+    <div class="field">
+      <%= form.label :valor_neto_unitario %>
+      <%= form.number_field :valor_neto_unitario %>
+    </div>
+
+    <div class="field">
+      <%= form.label :stock_inicial %>
+      <%= form.number_field :stock_inicial %>
+    </div>
+
+    <div class="field">
+      <%= form.label :compra_mes %>
+      <%= form.number_field :compra_mes %>
+    </div>
+
+    <div class="actions">
+      <%= form.submit %>
     </div>
   <% end %>
 
-  <div class="field">
-    <%= form.label :name %>
-    <%= form.text_field :name %>
-  </div>
+</div>
 
-  <div class="field">
-    <%= form.label :sku %>
-    <%= form.number_field :sku %>
-  </div>
-
-  <div class="field">
-    <%= form.label :valor_neto_unitario %>
-    <%= form.number_field :valor_neto_unitario %>
-  </div>
-
-  <div class="field">
-    <%= form.label :stock_inicial %>
-    <%= form.number_field :stock_inicial %>
-  </div>
-
-  <div class="field">
-    <%= form.label :compra_mes %>
-    <%= form.number_field :compra_mes %>
-  </div>
-
-  <div class="actions">
-    <%= form.submit %>
-  </div>
-<% end %>

@@ -1,39 +1,42 @@
-<p id="notice"><%= notice %></p>
+<div class="container">
+  <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @cafe.name %>
-</p>
+  <p>
+    <strong>Artículo:</strong>
+    <%= @cafe.name %>
+  </p>
 
-<p>
-  <strong>Sku:</strong>
-  <%= @cafe.sku %>
-</p>
+  <p>
+    <strong>SKU:</strong>
+    <%= @cafe.sku %>
+  </p>
 
-<p>
-  <strong>Valor neto unitario:</strong>
-  <%= @cafe.valor_neto_unitario %>
-</p>
+  <p>
+    <strong>Valor neto unitario:</strong>
+    <%= @cafe.valor_neto_unitario %>
+  </p>
 
-<p>
-  <strong>Stock inicial:</strong>
-  <%= @cafe.stock_inicial %>
-</p>
+  <p>
+    <strong>Stock inicial:</strong>
+    <%= @cafe.stock_inicial %>
+  </p>
 
-<p>
-  <strong>Maquina sl:</strong>
-  <%= @cafe.maquina_sl %>
-</p>
+  <p>
+    <strong>Maquina sl:</strong>
+    <%= @cafe.maquina_sl %>
+  </p>
 
-<p>
-  <strong>Maquina primerpiso:</strong>
-  <%= @cafe.maquina_primerpiso %>
-</p>
+  <p>
+    <strong>Maquina primer piso:</strong>
+    <%= @cafe.maquina_primerpiso %>
+  </p>
 
-<p>
-  <strong>Maquina segundopiso:</strong>
-  <%= @cafe.maquina_segundopiso %>
-</p>
+  <p>
+    <strong>Maquina segundo piso:</strong>
+    <%= @cafe.maquina_segundopiso %>
+  </p>
 
-<%= link_to 'Edit', edit_cafe_path(@cafe) %> |
-<%= link_to 'Back', caves_path %>
+  <%= link_to 'Edit', edit_cafe_path(@cafe) %> |
+  <%= link_to 'Back', caves_path %>
+  
+</div>
