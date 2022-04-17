@@ -24,7 +24,7 @@ class CavesController < ApplicationController
     @cafe = Cafe.new(cafe_params)
 
     respond_to do |format|
-      if @cafe.save
+      if @cafe.save #Here is the issue
         format.html { redirect_to cafe_url(@cafe), notice: "Cafe was successfully created." }
         format.json { render :show, status: :created, location: @cafe }
       else

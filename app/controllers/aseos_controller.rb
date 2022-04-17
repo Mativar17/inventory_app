@@ -57,6 +57,11 @@ class AseosController < ApplicationController
     end
   end
 
+  def contador
+    @aseo
+  end
+
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_aseo
